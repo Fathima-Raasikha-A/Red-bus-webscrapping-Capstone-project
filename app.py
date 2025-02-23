@@ -152,7 +152,7 @@ elif menu_option == "Filtering Page":
 
         # Column 5: Star Ratings
         with col5:
-            min_rating, max_rating = st.slider("Select Star Ratings Range", min_value=1, max_value=5, value=(2, 5), step=1)
+            min_rating, max_rating = st.slider("Select Star Ratings Range", min_value=1, max_value=5, value=(2, 5), step=0.5)
             df = df[(df["Star_Ratings"] >= min_rating) & (df["Star_Ratings"] <= max_rating)]
 
         # Column 6: AC Type
